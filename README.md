@@ -2,7 +2,7 @@
 
 Video to watch in udemy: 57
 
-# Running the project
+## Running the project
 
 brew services start postgresql
 rails s
