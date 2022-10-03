@@ -1,6 +1,6 @@
 # README
 
-Video to watch in udemy: 67. How to Implement Permalinks in a Rails Application - Part 1 of 2
+Video to watch in udemy: 69. How to Use Enums in Rails to Manage Data Stages
 
 ## Running the project
 
