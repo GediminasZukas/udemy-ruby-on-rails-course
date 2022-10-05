@@ -1,6 +1,6 @@
 # README
 
-Video to watch in udemy: 69. How to Use Enums in Rails to Manage Data Stages
+Video to watch in udemy: 71. How to Implement a Custom Action in Rails via a Button Click - Part 2 of 2
 
 ## Running the project
 
