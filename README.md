@@ -1,6 +1,6 @@
 # README
 
-Video to watch in udemy: 71. How to Implement a Custom Action in Rails via a Button Click - Part 2 of 2
+Video to watch in udemy: 74. Deep Dive: Rails Routing and Data Flow - Part 2 of 3
 
 ## Running the project
 
