@@ -10,7 +10,7 @@ To start the server with a database, run this command in a project root director
 docker compose up
 ```
 
-If you are launching server first time, you may need to create a database: `docker compose run web rails db:reset`
+If you are launching server first time, you may need to create and seed a database: `docker compose run web rails db:reset`
 
 Server can be reached by entering: ```http://localhost:3000/``` in a browser.
 
