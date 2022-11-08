@@ -19,3 +19,10 @@ To stop the server with a database:
 ```
 docker compose down
 ```
+
+If you need to rebuild the container (e.g. after updating some gems in `Gemfile`), run:
+
+```
+docker compose run web bundle install
+docker compose up --build
+```
