@@ -4,7 +4,7 @@ Video to watch in udemy: 74. Deep Dive: Rails Routing and Data Flow - Part 2 of 
 
 ## Running the project in a docker container
 
-To start the server with a database:
+To start the server with a database, run this command in a project root directory:
 
 ```
 docker compose up
