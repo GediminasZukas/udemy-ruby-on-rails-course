@@ -1,0 +1,15 @@
+services:
+  web:
+    build: .
+    volumes:
+      - .:/udemy-ruby-on-rails-course
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+  db:
+    image: postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
