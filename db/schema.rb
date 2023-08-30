@@ -10,16 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_10_092741) do
-
+ActiveRecord::Schema[7.0].define(version: 2023_08_30_052205) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.text "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: nil, null: false
+    t.datetime "updated_at", precision: nil, null: false
     t.string "slug"
     t.integer "status", default: 0
     t.index ["slug"], name: "index_blogs_on_slug", unique: true
@@ -30,7 +29,7 @@ ActiveRecord::Schema.define(version: 2020_08_10_092741) do
     t.integer "sluggable_id", null: false
     t.string "sluggable_type", limit: 50
     t.string "scope"
-    t.datetime "created_at"
+    t.datetime "created_at", precision: nil
     t.index ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
     t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
@@ -42,15 +41,15 @@ ActiveRecord::Schema.define(version: 2020_08_10_092741) do
     t.text "body"
     t.text "main_image"
     t.text "thumb_image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: nil, null: false
+    t.datetime "updated_at", precision: nil, null: false
   end
 
   create_table "skills", force: :cascade do |t|
     t.string "title"
     t.integer "percent_utilized"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", precision: nil, null: false
+    t.datetime "updated_at", precision: nil, null: false
   end
 
 end
